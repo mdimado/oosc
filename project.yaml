@@ -1,0 +1,10 @@
+fuzzing_engines:
+- libfuzzer
+homepage: https://github.com/trentm/python-markdown2
+language: python
+main_repo: https://github.com/trentm/python-markdown2
+sanitizers:
+- address
+- undefined
+vendor_ccs:
+- mdimad005@gmail.com
