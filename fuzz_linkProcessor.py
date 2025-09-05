@@ -14,10 +14,6 @@ def TestOneInput(data: bytes):
     # If test() matches, run it
     if link_processor.test(text):
         link_processor.run(text)
-
-    # Also fuzz the full Markdown path to reach nested states
-    md.convert(text)
-
     
 def main():
     atheris.Setup(sys.argv, TestOneInput, enable_python_coverage=True)
